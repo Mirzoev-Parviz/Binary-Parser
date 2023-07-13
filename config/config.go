@@ -59,6 +59,10 @@ func ConnectDB() *sql.DB {
 	return db
 }
 
+func GetDBConn() *sql.DB {
+	return DB
+}
+
 func DisconnectDB(db *sql.DB) {
 	err := db.Close()
 	if err != nil {

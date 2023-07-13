@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 	"net_parser/pkg/models"
-	"net_parser/pkg/utils"
+	"net_parser/pkg/repository"
 	"os"
 	"sync"
 )
@@ -65,7 +65,7 @@ func ParseBinaryData(db *sql.DB, filename string) error {
 
 	for i := 0; i < 8; i++ {
 		wg.Add(1)
-		go utils.SaveToDatabase(db, dataChan, &wg)
+		go repository.SaveToDatabase(db, dataChan, &wg)
 	}
 
 	for {

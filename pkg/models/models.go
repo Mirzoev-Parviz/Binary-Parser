@@ -28,6 +28,20 @@ type Data struct {
 	NfSourceIP    uint32
 }
 
+type FiltredData struct {
+	AccountID   uint32
+	Source      string
+	Destination string
+	Packets     uint16
+	Bytes       uint32
+	Sport       uint16
+	Dport       uint16
+	Proto       uint8
+	Tclass      uint32
+	DataTime    uint32
+	NFSource    string
+}
+
 type IP struct {
 	Source      string
 	Destination string

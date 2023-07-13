@@ -1,6 +1,6 @@
 data.txt
 test.go
 .env
-iptraffic_raw_1688363823.utm
-iptraffic_raw_1688968716_20230710_1142.utm
-iptraffic_raw.utm
+ip_1.utm
+ip6.utm
+ip60.utm
